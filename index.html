@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            background-color: rgb(43, 55, 226);
+            width: 200px;
+            height: 600px;
+            border-radius: 15px;
+            position: fixed;
+        }
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: cornsilk;
+            font-size: 20px;
+            padding: 5px 35px;
+        }
+
+        .menu h1 {
+            padding: 0px 35px;
+            color: cornsilk;
+        }
+
+        .showcase img {
+            width: 400px;
+            border-radius: 5px;
+            opacity: 0.6;
+        }
+
+        .showcase img:hover {
+            opacity: 1;
+        }
+
+        .showcase img:active {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .content {
+            margin-left: 400px;
+        }
+
+        h2 {
+            color: darkmagenta;
+        }
+
+        hr {
+            border: darkmagenta 5px solid;
+            border-radius: 10px;
+            margin-right: 320px;
+        }
+
+        h3 {
+            margin-right: 300px;
+        }
+        .card img{
+            width: 250px;
+            border-radius: 10px;
+        }
+        .card {
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .tarif{
+            display: inline-block;
+            text-align: center;
+            width: 35%;
+        }
+        .tarif li {
+        border-bottom: coral 2px solid;
+        list-style-type: none;
+        text-align: center;
+        padding-bottom:5px;
+        }
+        .tarif h2 {
+        background-color: darkmagenta;
+        color: white;
+        height: 70px;
+        border-radius: 50px;
+        text-align: center;
+        padding-top: 35px;
+        }
+        button{
+            width: 100px;
+            height: 35px;
+            border-radius: 5px;
+            color:yellow;
+            background-color: tomato;
+        }
+        button:hover{
+            color:tomato;
+            background-color: yellow;
+        }
+        input{
+            width: 780px;
+        }
+        .contact button{
+            width: 780px;
+            margin-top:40px ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <h1>Company name</h1>
+        <a href="#">Home</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#services">Services</a>
+        <a href="#designers">Designers</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="content">
+        <h1> Interior Design</h1>
+        <div class="showcase" id="showcase">
+            <h2>Showcase</h2>
+            <hr>
+            <img src="kitchenconcrete.jpg">
+            <img src="atrium.jpg">
+            <img src="diningroom.jpg">
+            <img src="bedroom.jpg">
+            <img src="livingroom.jpg">
+            <img src="livingroom2.jpg">
+        </div>
+
+
+
+        <div class="services" id="services">
+            <h2>Services</h2>
+            <hr>
+            <h3>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </h3>
+        </div>
+
+        <div class="designers" id="designers">
+            <h2>Designers</h2>
+            <hr>
+            <h3>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h3>
+            <h3>Our designers are thoughtfully chosen
+            </h3>
+            <div class="card">
+                <img src="team1.jpg">
+                <p>
+                    Аня Полежайкина
+                </p>
+                <p>
+                    разнорабочий
+                </p>
+                <p>
+                    график работы 10:00-10:01
+                </p>
+            </div>
+            <div class="card">
+                <img src="team2.jpg">
+                <p>
+                    Вася Пискарёв
+                </p>
+                <p>
+                    Дворник
+                </p>
+                <p>
+                    люблю работать особенно лежать
+                </p>
+            </div>
+            <div class="card">
+                <img src="team3.jpg">
+                <p>
+                    Миша Поседелкин
+                </p>
+                <p>
+                  Таксист
+                </p>
+                <p>
+                Забрали права
+                </p>
+            </div>
+        </div>
+        <div class="packages" id="packages">
+          <h2>Packages</h2>
+          <hr>
+          <h3>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</h3>
+          <div class="tarif"> 
+            <ol>
+            <h2>Basic</h2>
+            <il>Floorplanning</il>
+            <li>10 hour support</li>
+            <li>Photography</li>
+            <li>20% furniture discount</li>
+            <li>Good deals</li>
+            <h1>50 рублей</h1>
+            <li>в день</li>
+            <button>Sign Up</button>
+            </ol>
+            </div>
+         <div class="tarif">
+             <ol>
+            <h2>Pro</h2>
+            <il>Floorplanning</il>
+            <li>50 hour support</li>
+            <li>Photography</li>
+            <li>50% furniture discount</li>
+            <li>Great deals</li>
+            <h1>150 рублей</h1>
+            <li>в день</li>
+            <button>Sign Up</button>
+            </ol>
+            </div>         
+        </div>
+        <div class="contact" id="contact">
+        <h2>Contact</h2> 
+        <hr>
+        <h3></h3>
+        <h3>Name</h3>
+        <input>
+        <h3>Email</h3>
+        <input>
+        <h3>Message</h3>
+        <input>
+        <br>
+        <button>Send Message</button>
+        </div>
+    </div>
+</body>
+
+</html>
